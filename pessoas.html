@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Milaneli - Cadastro</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container">
+        
+        <a class="navbar-brand" href="#">
+            <img src="images/fap-online.png" width="120" height="auto" alt="">
+        </a>
+
+        <span class="navbar-text">
+            <p><a href="cadastro.html"><i class="fas fa-user-plus"></i> Cadastro</a></p>
+            <p class="active"><a href="pessoas.html"><i class="fas fa-users"></i> Pessoas</a></p>
+            <p><a href="#"><i class="fas fa-sign-out-alt"></i></a></p>
+        </span>
+
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+        <div class="jumbotron py-4 mb-5">
+            <p class="titulo"><span class="titulo-destaque">Lista</span> de pessoas</p>
+    
+            <p>Aqui você encontra todos os funcionários cadastrados. Utilize a busca para filtrar resultados específicos.</p>
+    
+            <hr class="my-4">
+
+            <form class="my-5">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-busca" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input type="text" class="form-control input-busca" placeholder="Pesquisar por nomes, CPF ou e-mails." id="input-busca">
+                </div>
+            </form>
+
+            <table class="table table-hover">
+                <thead class="headColor">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody class="tdColor" id="pessoas-table">
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>223.232.345-12</td>
+                        <td>exemplo@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Berglunds snabbkop</td>
+                        <td>543.862.129-23</td>
+                        <td>exemplo@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>223.232.345-12</td>
+                        <td>exemplo@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>678.221.345-30</td>
+                        <td>email@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Koniglich Essen</td>
+                        <td>123.346.345-64</td>
+                        <td>teste@email.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Essen</td>
+                        <td>416.986.345-44</td>
+                        <td>kim@email.com.br</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+    </div>
+    <!-- CONTEÚDO -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <small>Copyright 2018. Milaneli. Todos os direitos reservados.</small>
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+
+<script>
+    function somenteNumeros(num) {
+        var er = /[^0-9-() .]/;
+        er.lastIndex = 0;
+        var campo = num;
+        if (er.test(campo.value)) {
+            campo.value = "";
+        }
+    }
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

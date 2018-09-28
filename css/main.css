@@ -1,0 +1,107 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #9ea5ab;
+    background: #69AEFF;
+    background-image: linear-gradient(to right, #86F0FE, #69AEFF);
+}
+
+.navbar-dark .navbar-text a,
+.navbar-dark .navbar-text a:hover {
+    color: #9ea5ab;
+}
+
+.navbar-dark .navbar-text .active a {
+    color: #fff;
+}
+
+span.navbar-text p {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+
+p.active {
+    border: 1px solid #76A040;
+    border-radius: 3em;
+    padding: .2em 1em;
+}
+
+p.active a i {
+    color: #76A040;
+}
+
+span.navbar-text p a:hover {
+    text-decoration: none;
+}
+
+.btn-cadastrar {
+    color: #fff;
+    background: darkorange !important;
+    padding: .2em 1em !important;
+    border: none !important;
+    border-radius: 3em !important;
+    letter-spacing: 1px;
+}
+
+.btn-cadastrar:not(:disabled):not(.disabled):active,
+.btn-cadastrar:not(:disabled):not(.disabled).active,
+.show > .btn-cadastrar.dropdown-toggle {
+    background: darkorange !important;
+    border: none !important;
+}
+
+p.titulo {
+    font-size: 30px;
+}
+
+span.titulo-destaque {
+    color: darkorange;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer {
+    height: 60px;
+    background-color: #343a40;
+}
+
+/* PÁGINA PESSOAS */
+
+button.btn.btn-default.btn-busca {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #fff;
+    color: #9ea5ab;
+    border: 1px solid lightgrey;
+    border-right: none;
+}
+
+input.form-control.input-busca {
+    border: 1px solid lightgrey;
+    border-left: none;
+}
+
+thead.headColor {
+    background: lightgrey;
+}
+
+.headColor th {
+    font-weight: 300;
+}
+
+.tdColor tr td {
+    color: black;
+}
+
+.has-error {
+    border: 3px solid #dc3545;
+}
+
+.has-success {
+    border: 3px solid #28a745;
+}
+
+label.error {
+    display: none !important;
+}
